@@ -1,4 +1,7 @@
-import { extendTheme, stringifyTheme } from "@mui/material";
+import {
+  extendTheme,
+  // , stringifyTheme
+} from "@mui/material";
 
 const themeRaw = extendTheme({
   components: {
@@ -16,6 +19,6 @@ const themeRaw = extendTheme({
   },
 });
 // @ts-ignore
-themeRaw.toRuntimeSource = stringifyTheme;
+// themeRaw.toRuntimeSource = stringifyTheme;
 
 export const theme = themeRaw;

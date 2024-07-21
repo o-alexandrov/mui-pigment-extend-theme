@@ -1,4 +1,4 @@
-import "@pigment-css/react/styles.css";
+import "@mui/material-pigment-css/styles.css";
 
 import { createRoot } from "react-dom/client";
 import { App } from "./app";
