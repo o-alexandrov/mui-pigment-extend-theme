@@ -1,6 +1,6 @@
 import { extendTheme } from "@mui/material/styles";
 
-const themeRaw = extendTheme({
+export const theme = extendTheme({
   components: {
     MuiFab: {
       styleOverrides: {
@@ -18,5 +18,3 @@ const themeRaw = extendTheme({
     },
   },
 });
-
-export const theme = themeRaw;
