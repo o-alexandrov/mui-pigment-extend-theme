@@ -1,24 +1,22 @@
-import {
-  extendTheme,
-  // , stringifyTheme
-} from "@mui/material/styles";
+import { extendTheme } from "@mui/material/styles";
 
 const themeRaw = extendTheme({
   components: {
     MuiFab: {
       styleOverrides: {
-        extended: {
-          borderRadius: 12,
-          // borderRadius: `12px !important`,
-        },
         root: {
           background: `red !important`,
+          variants: [
+            {
+              props: { variant: "extended" },
+              style: { borderRadius: 12 },
+            },
+          ],
         },
+        extended: {},
       },
     },
   },
 });
-// @ts-ignore
-// themeRaw.toRuntimeSource = stringifyTheme;
 
 export const theme = themeRaw;
